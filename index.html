@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Ahmed - Frontend Developer</title>
+</head>
+<body>
+    <div class="scroll-overlay"></div>
+    <header>
+        
+        <nav class="navbar">
+                        <div class="nav-logo">
+                 <svg width="140" height="50" viewBox="0 0 140 50">
+  <defs>
+    <linearGradient id="animeGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff4d4d"/>
+      <stop offset="50%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#b300ff"/>
+    </linearGradient>
+  </defs>
+
+  <text x="0" y="32"
+        font-family="Arial, sans-serif"
+        font-size="26"
+        font-weight="bold"
+        fill="url(#animeGlow)"
+        letter-spacing="2">
+    Ahmed
+  </text>
+
+  <rect x="0" y="38" width="70" height="2" fill="#00e5ff"/>
+</svg>
+
+
+</div>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="background"></div>
+            <h1>Hi, I'm Ahmed<br><span class="typing"></span></h1>
+            <p>Turning ideas into beautiful and functional websites.</p>
+            <div class="buttons">
+            <a href="#projects" class="cta-button">View My Work</a>
+            <a href="#contact" class="con-button">Contact Me</a>
+        </div>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="underline">
+        <img class="about-image" src="https://www.image2url.com/r2/default/images/1777464908585-8995b533-8092-47db-9d93-c039976c1a48.jpg" alt="Ahmed">
+<div class="about-right">
+     <p>
+            I'm a passionate <span class="red">Moroccan</span> frontend developer who enjoys building clean and modern web interfaces. I focus on creating responsive and user-friendly websites while constantly improving my skills and learning new technologies.<br>
+            I turn ideas into simple, elegant, and functional experiences.<br>
+            Skills: HTML • CSS • JavaScript • Responsive Design<br>
+            My goal is to create high-quality websites and grow as a professional developer while delivering real value to clients.<br>
+</p>
+        <div class="skills">
+            <div class="tootltip">
+                <span class="skill">HTML</span>
+                <div class="tooltiptext">Advanced ⚡</div>
+                </div>
+                    <div class="tootltip">
+                <span class="skill">CSS</span>
+                <div class="tooltiptext">Intermediate 🔥</div>
+                </div>
+                    <div class="tootltip">
+                <span class="skill">JavaScript</span>
+                <div class="tooltiptext">Intermediate 🔥</div>
+                </div>
+                    <div class="tootltip">
+                <span class="skill" id="responsive-design">React</span>
+                <div class="tooltiptext">Beginner (Learning) ⚛️</div>
+        </div>
+    </div>
+</div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+          <div class="container">
+            <div class="projects-card">
+                <img class="project-image" src="Task manager.png" alt="Task Manager" data-link="https://BlayzeX.github.io/Task-Manager">
+                <h3>Task Manager</h3>
+                <p>A gamified task manager built with vanilla JavaScript. Complete tasks to earn XP, level up, and track your progress — all saved automatically with localStorage.</p>
+            <div class="projects-skills">
+                <span class="skill">JavaScript</span>
+                <span class="skill">LocalStorage</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+            </div>
+            <div class="buttons">
+            <a class="live" href="https://BlayzeX.github.io/Task-Manager" target="_blank" class="project-link">Live Demo</a>
+            <a class="code" href="https://github.com/BlayzeX/Task-Manager" target="_blank" class="project-link">Source Code</a>
+        </div>
+        </div>
+        <div class="projects-card">
+                <img class="project-image" src="Shop page.png" alt="Shop Page" data-link="https://BlayzeX.github.io/Shop-Page">
+                <h3>Shop Page</h3>
+                <p>A fully functional e-commerce shop page built with vanilla JavaScript.Features a dynamic product grid, shopping cart with real-time price calculation, quantity controls, duplicate prevention, and localStorage to save your cart between sessions..</p>
+            <div class="projects-skills">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">LocalStorage</span>
+            </div>
+            <div class="buttons">
+            <a class="live" href="https://BlayzeX.github.io/Shop-Page" target="_blank" class="project-link">Live Demo</a>
+            <a class="code" href="https://github.com/BlayzeX/Shop-Page" target="_blank" class="project-link">Source Code</a>
+        </div>
+        </div>
+        <div id="calculater" class="projects-card">
+                <img class="project-image" src="Calculator.png" alt="Calculator" data-link="https://blayzex.github.io/Calculator/">
+                <h3>Calculater</h3>
+                <p>A simple calculator app built with vanilla JavaScript. It features a clean interface and basic arithmetic operations.</p>
+            <div class="projects-skills">
+                <span class="skill">JavaScript</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+            </div>
+            <div class="buttons">
+            <a class="live" href="https://BlayzeX.github.io/Calculator/" target="_blank" class="project-link">Live Demo</a>
+            <a class="code" href="https://github.com/BlayzeX/Calculator" target="_blank" class="project-link">Source Code</a>
+        </div>
+        </div>
+        <div class="projects-card">
+                <img class="project-image" src="Summer countdown.png" alt="Summer Countdown" data-link="https://blayzex.github.io/Summer-Break-Countedown/">
+                <h3>Summer Countdown</h3>
+                <p>A simple countdown timer for the summer season, built with vanilla JavaScript.</p>
+            <div class="projects-skills">
+                <span class="skill">JavaScript</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+            </div>
+            <div class="buttons">
+            <a class="live" href="https://BlayzeX.github.io/Summer-Break-Countedown/" target="_blank" class="project-link">Live Demo</a>
+            <a class="code" href="https://github.com/BlayzeX/Summer-Break-Countedown" target="_blank" class="project-link">Source Code</a>
+        </div>
+        </div>
+        <div class="projects-card">
+                <img class="project-image" src="Clock.png" alt="Clock" data-link="https://blayzex.github.io/Clock/">
+                <h3>Clock</h3>
+                <p>A simple clock application built with vanilla JavaScript. Works with am/pm format. And a japanese background</p>
+            <div class="projects-skills">
+                <span class="skill">JavaScript</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+            </div>
+            <div class="buttons">
+            <a class="live" href="https://BlayzeX.github.io/Clock/" target="_blank" class="project-link">Live Demo</a>
+            <a class="code" href="https://github.com/BlayzeX/Clock" target="_blank" class="project-link">Source Code</a>
+        </div>
+        </div>
+        <div class="projects-card">
+                <img class="project-image" src="Palindrome checker.png" alt="Palindrome Checker" data-link="https://blayzex.github.io/Palindrome-Checker/">
+                <h3>Palindrome Checker</h3>
+                <p>A simple palindrome checker application built with vanilla JavaScript. It allows users to input a string and checks if it is a palindrome.</p>
+            <div class="projects-skills">
+                <span class="skill">JavaScript</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+            </div>
+            <div class="buttons">
+            <a class="live" href="https://BlayzeX.github.io/Palindrome-Checker/" target="_blank" class="project-link">Live Demo</a>
+            <a class="code" href="https://github.com/BlayzeX/Palindrome-Checker" target="_blank" class="project-link">Source Code</a>
+        </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+        <div class="contact-info">
+    
+           <div class="contact-icons">
+            <div class="tootltiptwo">
+    <a href="https://github.com/BlayzeX" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+    <div class="tooltiptexttwo">GitHub</div>
+    </div>
+    <div class="tootltiptwo">
+    <a href="https://twitter.com/BlayzeX27" target="_blank">
+        <i class="fab fa-x-twitter"></i>
+    </a>
+    <div class="tooltiptexttwo">X (Twitter)</div>
+    </div>
+    <div class="tootltiptwo"><a href="https://www.instagram.com/blayzex.dev/" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <div class="tooltiptexttwo">Instagram</div>
+</div>
+    
+</div>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>&copy; 2026 Ahmed. Built with ❤️ using HTML, CSS & JavaScript.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
