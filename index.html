@@ -10,86 +10,95 @@
 </head>
 <body>
     <div class="scroll-overlay"></div>
-    <header>
+    <header class="navbar">
         
-        <nav class="navbar">
-                        <div class="nav-logo">
-                 <svg width="140" height="50" viewBox="0 0 140 50">
-  <defs>
-    <linearGradient id="animeGlow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ff4d4d"/>
-      <stop offset="50%" stop-color="#00e5ff"/>
-      <stop offset="100%" stop-color="#b300ff"/>
-    </linearGradient>
-  </defs>
+         <a href="#home" class="logo">Ahmed</a>
 
-  <text x="0" y="32"
-        font-family="Arial, sans-serif"
-        font-size="26"
-        font-weight="bold"
-        fill="url(#animeGlow)"
-        letter-spacing="2">
-    Ahmed
-  </text>
-
-  <rect x="0" y="38" width="70" height="2" fill="#00e5ff"/>
-</svg>
-
-
-</div>
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <div class="background"></div>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav> 
+  <a href="#contact" class="nav-cta">Hire Me</a>
+</header>
+ 
+        <section id="hero">
             <h1>Hi, I'm Ahmed<br><span class="typing"></span></h1>
             <p>Turning ideas into beautiful and functional websites.</p>
             <div class="buttons">
             <a href="#projects" class="cta-button">View My Work</a>
             <a href="#contact" class="con-button">Contact Me</a>
         </div>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="underline">
-        <img class="about-image" src="https://www.image2url.com/r2/default/images/1777464908585-8995b533-8092-47db-9d93-c039976c1a48.jpg" alt="Ahmed">
-<div class="about-right">
-     <p>
-            I'm a passionate <span class="red">Moroccan</span> frontend developer who enjoys building clean and modern web interfaces. I focus on creating responsive and user-friendly websites while constantly improving my skills and learning new technologies.<br>
-            I turn ideas into simple, elegant, and functional experiences.<br>
-            Skills: HTML • CSS • JavaScript • Responsive Design<br>
-            My goal is to create high-quality websites and grow as a professional developer while delivering real value to clients.<br>
-</p>
-        <div class="skills">
-            <div class="tootltip">
-                <span class="skill">HTML</span>
-                <div class="tooltiptext">Advanced ⚡</div>
+      </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="underline"></div>
+
+    <div class="about-container">
+        <div class="card">
+            <div class="upper-card">
+                <div class="profile">&lt;/&gt;</div>
+                <p class="name">Ahmed</p>
+                <p class="role">Building modern websites with clean UI and responsive design.</p>
+            </div>
+
+            <div class="lower-card">
+                <div class="info-box">
+                    <span class="info-label">Focus :</span>
+                    <p>Landing pages • Portfolio sites • Clean UI</p>
                 </div>
-                    <div class="tootltip">
-                <span class="skill">CSS</span>
-                <div class="tooltiptext">Intermediate 🔥</div>
+
+                <div class="info-box">
+                    <span class="info-label">Stack :</span>
+                    <p>
+                        React <span class="skill-separator">•</span>
+                        JavaScript <span class="skill-separator">•</span>
+                        HTML <span class="skill-separator">•</span>
+                        CSS
+                    </p>
                 </div>
-                    <div class="tootltip">
-                <span class="skill">JavaScript</span>
-                <div class="tooltiptext">Intermediate 🔥</div>
+
+                <div class="info-box">
+                    <span class="info-label">Status :</span>
+                    <p>Available for freelance frontend projects</p>
                 </div>
-                    <div class="tootltip">
-                <span class="skill" id="responsive-design">React</span>
-                <div class="tooltiptext">Beginner (Learning) ⚛️</div>
+            </div>
+        </div>
+
+        <div class="about-right">
+            <p class="about-text">
+                I’m Ahmed, a frontend developer focused on building modern landing pages, portfolio websites, and clean user interfaces. I enjoy turning ideas into responsive, polished web experiences using React, JavaScript, HTML, and CSS.
+            </p>
+
+            <div class="skills">
+                <div class="tooltip">
+                    <span class="skill">Responsive landing pages</span>
+                    <div class="tooltiptext">Advanced ⚡</div>
+                </div>
+
+                <div class="tooltip">
+                    <span class="skill">Portfolio websites</span>
+                    <div class="tooltiptext">Advanced ⚡</div>
+                </div>
+
+                <div class="tooltip">
+                    <span class="skill">Clean frontend UI with React</span>
+                    <div class="tooltiptext">Advanced 🔥</div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
     </section>
     <section id="projects">
-        <h2>Projects</h2>
-          <div class="container">
-            <div class="projects-card">
-                <img class="project-image" src="Task manager.png" alt="Task Manager" data-link="https://BlayzeX.github.io/Task-Manager">
-                <h3>Task Manager</h3>
-                <p>A gamified task manager built with vanilla JavaScript. Complete tasks to earn XP, level up, and track your progress — all saved automatically with localStorage.</p>
+    <h2>Projects</h2>
+    <div class="section-underline"></div>
+
+    <div class="projects-container">
+        <div class="projects-card visible-project">
+            <img class="project-image" src="Task manager.png" alt="Task Manager" data-link="https://BlayzeX.github.io/Task-Manager">
+            <h3>Task Manager</h3>
+            <p>A gamified task manager built with vanilla JavaScript. Complete tasks to earn XP, level up, and track your progress — all saved automatically with localStorage.</p>
             <div class="projects-skills">
                 <span class="skilltwo">JavaScript</span>
                 <span class="skilltwo">LocalStorage</span>
@@ -97,14 +106,15 @@
                 <span class="skilltwo">CSS</span>
             </div>
             <div class="buttons">
-            <a class="live" href="https://BlayzeX.github.io/Task-Manager" target="_blank" class="project-link">Live Demo</a>
-            <a class="code" href="https://github.com/BlayzeX/Task-Manager" target="_blank" class="project-link">Source Code</a>
+                <a class="live" href="https://BlayzeX.github.io/Task-Manager" target="_blank">Live Demo</a>
+                <a class="code" href="https://github.com/BlayzeX/Task-Manager" target="_blank">Source Code</a>
+            </div>
         </div>
-        </div>
-        <div class="projects-card">
-                <img class="project-image" src="Shop page.png" alt="Shop Page" data-link="https://BlayzeX.github.io/Shop-Page">
-                <h3>Shop Page</h3>
-                <p>A fully functional e-commerce shop page built with vanilla JavaScript.Features a dynamic product grid, shopping cart with real-time price calculation, quantity controls, duplicate prevention, and localStorage to save your cart between sessions..</p>
+
+        <div class="projects-card visible-project">
+            <img class="project-image" src="Shop page.png" alt="Shop Page" data-link="https://BlayzeX.github.io/Shop-Page">
+            <h3>Shop Page</h3>
+            <p>A fully functional e-commerce shop page built with vanilla JavaScript. Features a dynamic product grid, shopping cart with real-time price calculation, quantity controls, duplicate prevention, and localStorage to save the cart between sessions.</p>
             <div class="projects-skills">
                 <span class="skilltwo">HTML</span>
                 <span class="skilltwo">CSS</span>
@@ -112,14 +122,15 @@
                 <span class="skilltwo">LocalStorage</span>
             </div>
             <div class="buttons">
-            <a class="live" href="https://BlayzeX.github.io/Shop-Page" target="_blank" class="project-link">Live Demo</a>
-            <a class="code" href="https://github.com/BlayzeX/Shop-Page" target="_blank" class="project-link">Source Code</a>
+                <a class="live" href="https://BlayzeX.github.io/Shop-Page" target="_blank">Live Demo</a>
+                <a class="code" href="https://github.com/BlayzeX/Shop-Page" target="_blank">Source Code</a>
+            </div>
         </div>
-        </div>
-                <div class="projects-card">
-                <img class="project-image" src="Weather app.png" alt="Weather App" data-link="https://blayzex.github.io/Weather-app/">
-                <h3>Weather App</h3>
-                <p>A simple weather application built with vanilla JavaScript. It allows users to search for current weather conditions in any city worldwide using the OpenWeatherMap API.</p>
+
+        <div class="projects-card visible-project">
+            <img class="project-image" src="Weather app.png" alt="Weather App" data-link="https://blayzex.github.io/Weather-app/">
+            <h3>Weather App</h3>
+            <p>A weather application built with vanilla JavaScript that lets users search for current weather conditions in any city using the OpenWeatherMap API.</p>
             <div class="projects-skills">
                 <span class="skilltwo">JavaScript</span>
                 <span class="skilltwo">HTML</span>
@@ -127,93 +138,113 @@
                 <span class="skilltwo">API</span>
             </div>
             <div class="buttons">
-            <a class="live" href="https://Blayzex.github.io/Weather-app/" target="_blank" class="project-link">Live Demo</a>
-            <a class="code" href="https://github.com/BlayzeX/Weather-app" target="_blank" class="project-link">Source Code</a>
+                <a class="live" href="https://Blayzex.github.io/Weather-app/" target="_blank">Live Demo</a>
+                <a class="code" href="https://github.com/BlayzeX/Weather-app" target="_blank">Source Code</a>
+            </div>
         </div>
-        </div>
-        <div id="calculater" class="projects-card">
-                <img class="project-image" src="Calculator.png" alt="Calculator" data-link="https://blayzex.github.io/Calculator/">
-                <h3>Calculater</h3>
-                <p>A simple calculator app built with vanilla JavaScript. It features a clean interface and basic arithmetic operations.</p>
+
+        <div class="projects-card hidden-project">
+            <img class="project-image" src="Calculator.png" alt="Calculator" data-link="https://blayzex.github.io/Calculator/">
+            <h3>Calculator</h3>
+            <p>A simple calculator app built with vanilla JavaScript featuring a clean interface and basic arithmetic operations.</p>
             <div class="projects-skills">
                 <span class="skilltwo">JavaScript</span>
                 <span class="skilltwo">HTML</span>
                 <span class="skilltwo">CSS</span>
             </div>
             <div class="buttons">
-            <a class="live" href="https://BlayzeX.github.io/Calculator/" target="_blank" class="project-link">Live Demo</a>
-            <a class="code" href="https://github.com/BlayzeX/Calculator" target="_blank" class="project-link">Source Code</a>
+                <a class="live" href="https://BlayzeX.github.io/Calculator/" target="_blank">Live Demo</a>
+                <a class="code" href="https://github.com/BlayzeX/Calculator" target="_blank">Source Code</a>
+            </div>
         </div>
-        </div>
-        <div class="projects-card">
-                <img class="project-image" src="Restaurant.png" alt="Calculator" data-link="https://blayzex.github.io/Restaurant-website/">
-                <h3>Restaurant</h3>
-                <p>A modern and elegant restaurant website built with HTML, CSS & Vanilla JavaScript. Designed to help Moroccan restaurants establish a professional online presence.</p>
+
+        <div class="projects-card hidden-project">
+            <img class="project-image" src="Restaurant.png" alt="Restaurant" data-link="https://blayzex.github.io/Restaurant-website/">
+            <h3>Restaurant</h3>
+            <p>A modern restaurant website built with HTML, CSS, and JavaScript to help Moroccan restaurants establish a professional online presence.</p>
             <div class="projects-skills">
                 <span class="skilltwo">JavaScript</span>
                 <span class="skilltwo">HTML</span>
                 <span class="skilltwo">CSS</span>
             </div>
             <div class="buttons">
-            <a class="live" href="https://blayzex.github.io/Restaurant-website/" target="_blank" class="project-link">Live Demo</a>
-            <a class="code" href="https://github.com/BlayzeX/Restaurant-website" target="_blank" class="project-link">Source Code</a>
+                <a class="live" href="https://blayzex.github.io/Restaurant-website/" target="_blank">Live Demo</a>
+                <a class="code" href="https://github.com/BlayzeX/Restaurant-website" target="_blank">Source Code</a>
+            </div>
         </div>
-        </div>
-        <div class="projects-card">
-                <img class="project-image" src="Summer countdown.png" alt="Summer Countdown" data-link="https://blayzex.github.io/Summer-Break-Countedown/">
-                <h3>Summer Countdown</h3>
-                <p>A simple countdown timer for the summer season, built with vanilla JavaScript.</p>
+
+        <div class="projects-card hidden-project">
+            <img class="project-image" src="Summer countdown.png" alt="Summer Countdown" data-link="https://blayzex.github.io/Summer-Break-Countedown/">
+            <h3>Summer Countdown</h3>
+            <p>A simple countdown timer for the summer season built with vanilla JavaScript.</p>
             <div class="projects-skills">
                 <span class="skilltwo">JavaScript</span>
                 <span class="skilltwo">HTML</span>
                 <span class="skilltwo">CSS</span>
             </div>
             <div class="buttons">
-            <a class="live" href="https://BlayzeX.github.io/Summer-Break-Countedown/" target="_blank" class="project-link">Live Demo</a>
-            <a class="code" href="https://github.com/BlayzeX/Summer-Break-Countedown" target="_blank" class="project-link">Source Code</a>
+                <a class="live" href="https://BlayzeX.github.io/Summer-Break-Countedown/" target="_blank">Live Demo</a>
+                <a class="code" href="https://github.com/BlayzeX/Summer-Break-Countedown" target="_blank">Source Code</a>
+            </div>
         </div>
-        </div>
-        <div class="projects-card">
-                <img class="project-image" src="Clock.png" alt="Clock" data-link="https://blayzex.github.io/Clock/">
-                <h3>Clock</h3>
-                <p>A simple clock application built with vanilla JavaScript. Works with am/pm format. And a japanese background</p>
+
+        <div class="projects-card hidden-project">
+            <img class="project-image" src="Clock.png" alt="Clock" data-link="https://blayzex.github.io/Clock/">
+            <h3>Clock</h3>
+            <p>A simple clock application built with vanilla JavaScript featuring AM/PM format and a Japanese-inspired design.</p>
             <div class="projects-skills">
                 <span class="skilltwo">JavaScript</span>
                 <span class="skilltwo">HTML</span>
                 <span class="skilltwo">CSS</span>
             </div>
-            <div class="buttons">
-            <a class="live" href="https://BlayzeX.github.io/Clock/" target="_blank" class="project-link">Live Demo</a>
-            <a class="code" href="https://github.com/BlayzeX/Clock" target="_blank" class="project-link">Source Code</a>
+            <div class="projects-buttons">
+                <a class="live" href="https://BlayzeX.github.io/Clock/" target="_blank">Live Demo</a>
+                <a class="code" href="https://github.com/BlayzeX/Clock" target="_blank">Source Code</a>
+            </div>
         </div>
-        </div>
-    </section>
+    </div>
+
+    <div class="projects-btn-wrapper">
+        <button id="show-more">Show More</button>
+    </div>
+</section>
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Have a project in mind or just want to say hi? I'd love to hear from you.</p>
         <div class="contact-info">
     
            <div class="contact-icons">
-            <div class="tootltiptwo">
+            <div class="tooltiptwo">
     <a href="https://github.com/BlayzeX" target="_blank">
         <i class="fab fa-github"></i>
     </a>
     <div class="tooltiptexttwo">GitHub</div>
     </div>
-    <div class="tootltiptwo">
+    <div class="tooltiptwo">
     <a href="https://twitter.com/BlayzeX27" target="_blank">
         <i class="fab fa-x-twitter"></i>
     </a>
     <div class="tooltiptexttwo">X (Twitter)</div>
     </div>
-    <div class="tootltiptwo"><a href="https://www.instagram.com/blayzex.dev/" target="_blank">
+    <div class="tooltiptwo">
+    <a href="https://www.instagram.com/blayzex.dev/" target="_blank">
         <i class="fab fa-instagram"></i>
     </a>
     <div class="tooltiptexttwo">Instagram</div>
 </div>
-    
+    <div class="tooltiptwo">
+    <a href="mailto:blayzex.dev@gmail.com" target="_blank" aria-label="Email Ahmed">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+    <div class="tooltiptexttwo">Send Email</div>
 </div>
-        </div>
+<div class="tooltiptwo">
+    <a href="https://www.linkedin.com/in/ahmed-ouzahra-74736a3a0/" target="_blank" aria-label="LinkedIn Ahmed">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <div class="tooltiptexttwo">LinkedIn</div>
+</div>
+</div>
     </section>
     <footer id="footer">
         <p>&copy; 2026 Ahmed. Built with ❤️ using HTML, CSS & JavaScript.</p>

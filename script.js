@@ -61,22 +61,22 @@ const navbar = document.querySelector(".navbar");
 
 links.forEach(link => {
    link.addEventListener("mouseenter", () => {
-     navbar.style.background = "rgb(8, 15, 58)";
-     navbar.style.padding = "10px 50px";
+     navbar.style.background = "rgb(10, 20, 76);";
+     navbar.style.padding = "8px 50px";
    });
    link.addEventListener("mouseleave", () => {
-    navbar.style.background = "";
-    navbar.style.padding = "";
+    navbar.style.background = "rgba(10, 20, 76, 0.6);";
+    navbar.style.padding = "10px 50px";
    });
 });
 const overlay = document.querySelector(".scroll-overlay");
 window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
-        navbar.style.background = "rgb(8, 15, 58)";
-        navbar.style.padding = "10px 50px";
+        navbar.style.background = "rgb(10, 20, 76);";
+        navbar.style.padding = "8px 50px";
     } else {
-        navbar.style.background = "";
-        navbar.style.padding = "";
+        navbar.style.background = "rgba(10, 20, 76, 0.6);";
+        navbar.style.padding = "10px 50px";
     }
     const scrollY = window.scrollY;
     const hero = document.querySelector(".hero");
@@ -88,4 +88,18 @@ document.querySelectorAll(".project-image").forEach(function(img) {
     img.addEventListener("click", function() {
         window.open(this.dataset.link, "_blank");
     });
+});
+const showMoreBtn = document.getElementById("show-more");
+const hiddenProjects = document.querySelectorAll(".hidden-project");
+
+let projectsVisible = false;
+
+showMoreBtn.addEventListener("click", () => {
+  projectsVisible = !projectsVisible;
+
+  hiddenProjects.forEach(project => {
+    project.style.display = projectsVisible ? "flex" : "none";
+  });
+
+  showMoreBtn.textContent = projectsVisible ? "Show Less" : "Show More";
 });
