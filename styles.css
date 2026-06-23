@@ -530,7 +530,7 @@
     margin-top: 40px;
 }
 
-#show-more {
+#showMore {
     background: transparent;
     color: #00c8ff;
     border: 1px solid #00c8ff;
@@ -541,7 +541,7 @@
     transition: 0.3s ease;
 }
 
-#show-more:hover {
+#showMore:hover {
     background: #00c8ff;
     color: #0a144c;
     transform: translateY(-3px);
