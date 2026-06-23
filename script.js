@@ -89,17 +89,21 @@ document.querySelectorAll(".project-image").forEach(function(img) {
         window.open(this.dataset.link, "_blank");
     });
 });
-const showMoreBtn = document.getElementById("showMore");
-const hiddenProjects = document.querySelectorAll(".hidden-project");
+document.addEventListener("DOMContentLoaded", () => {
+  const showMoreBtn = document.getElementById("showMore");
+  const hiddenProjects = document.querySelectorAll(".hidden-project");
 
-let projectsVisible = false;
+  let projectsVisible = false;
 
-showMoreBtn.addEventListener("click", () => {
-  projectsVisible = !projectsVisible;
+  if (!showMoreBtn) return;
 
-  hiddenProjects.forEach(project => {
-    project.style.display = projectsVisible ? "flex" : "none";
+  showMoreBtn.addEventListener("click", () => {
+    projectsVisible = !projectsVisible;
+
+    hiddenProjects.forEach(project => {
+      project.style.display = projectsVisible ? "flex" : "none";
+    });
+
+    showMoreBtn.textContent = projectsVisible ? "Show Less" : "Show More";
   });
-
-  showMoreBtn.textContent = projectsVisible ? "Show Less" : "Show More";
 });
