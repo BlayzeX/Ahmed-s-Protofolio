@@ -89,7 +89,7 @@ document.querySelectorAll(".project-image").forEach(function(img) {
         window.open(this.dataset.link, "_blank");
     });
 });
-const showMoreBtn = document.getElementById("show-more");
+const showMoreBtn = document.getElementById("showMore");
 const hiddenProjects = document.querySelectorAll(".hidden-project");
 
 let projectsVisible = false;
