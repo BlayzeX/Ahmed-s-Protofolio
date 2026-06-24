@@ -35,55 +35,6 @@ function typingAnimation() {
 
 typingAnimation();
 
-//Particles
-const container = document.querySelector(".background");
-
-for (let i = 0; i < 20; i++) {
-    const p = document.createElement('div');
-    p.className = 'particle';
-
-    const size = Math.random() > 0.7 ? 3 : 2;
-    const color = Math.random() > 0.6 ? '#00c8ff' : '#7722ee';
-
-    p.style.left = `${Math.random() * 100}vw`;
-    p.style.width = `${size}px`;
-    p.style.height = `${size}px`;
-    p.style.background = color;
-    p.style.boxShadow = `0 0 6px ${color}`;
-    p.style.animationDuration = `${8 + Math.random() * 10}s`;
-    p.style.animationDelay = `${Math.random() * 3}s`;
-
-    container.appendChild(p);
-}
-//Navbar Effect
-const links = document.querySelectorAll(".nav-item");
-const navbar = document.querySelector(".navbar");
-
-links.forEach(link => {
-   link.addEventListener("mouseenter", () => {
-     navbar.style.background = "rgb(10, 20, 76);";
-     navbar.style.padding = "8px 50px";
-   });
-   link.addEventListener("mouseleave", () => {
-    navbar.style.background = "rgba(10, 20, 76, 0.6);";
-    navbar.style.padding = "10px 50px";
-   });
-});
-const overlay = document.querySelector(".scroll-overlay");
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-        navbar.style.background = "rgb(10, 20, 76);";
-        navbar.style.padding = "8px 50px";
-    } else {
-        navbar.style.background = "rgba(10, 20, 76, 0.6);";
-        navbar.style.padding = "10px 50px";
-    }
-    const scrollY = window.scrollY;
-    const hero = document.querySelector(".hero");
-    const opacity = Math.min(scrollY / 500, 0.8);
-    hero.style.filter = `brightness(${1 - opacity})`;
-
-});
 document.querySelectorAll(".project-image").forEach(function(img) {
     img.addEventListener("click", function() {
         window.open(this.dataset.link, "_blank");
